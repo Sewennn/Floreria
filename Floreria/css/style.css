@@ -1,0 +1,14 @@
+@font-face{
+    font-family: omori_game;
+    src: url('font/OMORI_GAME2.ttf');
+}
+#menu a{
+    font-size: 18px;
+    color: white;
+
+}
+#menu button{
+    font-size: 18px;
+    font-weight: bold;
+
+}

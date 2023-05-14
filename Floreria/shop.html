@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tienda</title>
+</head>
+<body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-success p-3" id="menu">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+           <span class="text-light fs-5 fw-bolder">Floreria Peppi</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="shop.html" style="color: black;">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="modificarTienda.html">Modificar</a>
+              </li>
+            </ul>
+            <div class="nav-item p-3">
+                <a class="nav-link" href="login.html">Cuenta</a>
+            </div>
+            <div class="nav-item p-3">
+              <div id="id-sun" class="btn-mode sun active">
+                <i class="fas fa-sun"></i>
+             </div>
+             <div id="id-moon" class="btn-mode moon">
+                <i class="fas fa-moon"></i>
+             </div>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" aria-label="Search">
+              <button class="btn btn-light btn-outline-success" type="button">Buscar</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div class="carrito">
+      <div class="header-carrito">
+        <h2>Tu carrito</h2>
+      </div>
+      <div class="carrito-items">
+<!--         <div class="carrito-item">
+          <img src="" alt="" width="80px">
+          <div class="carrito-item-detalles">
+            <span class="carrito-item-titulo"></span>
+            <div class="selector-cantidad">
+              <i class="fa-solid fa-minus restar-cantidad"></i>
+              <input type="text" value="1" class="carrito-item-cantidad" disabled>
+              <i class="fa-solid fa-plus sumar-cantidad"></i>
+              <span class="carrito-item-precio"></span>
+            </div>
+          </div>
+          <span class="btn-eliminar">
+            <i class="fa-solid fa-trash"></i>
+          </span>
+        </div> -->
+      </div>
+      <div class="carrito-total">
+        <div class="fila">
+          <strong>Tu total</strong>
+          <span class="carrito-precio-total"></span>
+        </div>
+        <button class="btn-pagar btn btn-success">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row row-cols-3">
+        <div class="col" id="item">
+          <span class="title-item">Macetero De Tela Geotexti 15l - Garden Highpro</span>
+          <br>
+          <img src="https://falabella.scene7.com/is/image/Falabella/gsc_117005487_1638460_1?wid=240&hei=240&qlt=70&fmt=webp" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$2.840</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">DRACAENA 130CM</span>
+          <br>
+          <img src="https://falabella.scene7.com/is/image/Falabella/gsc_113854293_792917_1?wid=240&hei=240&qlt=70&fmt=webp" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$56.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">FICUS 190 CM</span>
+          <br>
+          <img src="https://falabella.scene7.com/is/image/Falabella/gsc_113860374_529214_1?wid=240&hei=240&qlt=70&fmt=webp" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$202.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Sustrato para Suculentas 22L De Raíz Abono</span>
+          <br>
+          <img src="https://falabella.scene7.com/is/image/Falabella/gsc_117996663_1924945_1?wid=240&hei=240&qlt=70&fmt=webp" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$13.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Tierra de hoja para jardín 80 litros saco</span>
+          <br>
+          <img src="https://sodimac.scene7.com/is/image/SodimacCL/461997_01?wid=1500&hei=1500&qlt=70" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$14.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+        <div class="col" id="item">
+          <span class="title-item">Semilla flor girasol 3 gr sachet</span>
+          <br>
+          <img src="https://sodimac.scene7.com/is/image/SodimacCL/1938797_01?wid=1500&hei=1500&qlt=70" alt="" class="img-item"> 
+          <br>
+          <span class="precio-item">$1.990</span>
+          <br>
+          <button class="btn btn-success agregar">Agregar al carrito</button>
+        </div>
+      </div>
+    </div>
+
+<!--     <div class="container-sm d-flex justify-content-center rounded-5 mt-5 bg-success">
+        <p style="color: white; font-family: omori_game; font-size: 40px;">El carrito esta actualmente vacio</p>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto rounded-5 mt-5">
+        <button style="font-family: omori_game; font-size: 30px;" class="btn btn-success" type="button">Volver a la Tienda</button>
+      </div> -->
+
+
+
+<script src="js/mode.js"></script>
+<script src="js/carrito.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+</body>
+</html>
